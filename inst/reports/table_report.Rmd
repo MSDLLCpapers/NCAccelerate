@@ -1,0 +1,18 @@
+---
+title: "`r params$title`"
+output: word_document
+params:
+  data: NULL
+  title: "Table"
+  footnotes: NULL
+---
+
+```{r table, echo = FALSE}
+knitr::kable(params$data)
+```
+
+```{r footnotes, echo = FALSE, results = "asis"}
+if (length(params$footnotes) > 0) {
+  cat(paste(params$footnotes, collapse = "\n\n"))
+}
+```

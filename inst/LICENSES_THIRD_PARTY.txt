@@ -1,0 +1,33 @@
+NCAcelerate uses third-party R packages which may be distributed under different
+licenses. We have listed all of these third party packages and their licenses
+below. However, the most up-to-date information can be found via inspecting
+the library() calls in the application source file (app.R).
+
+You must agree to the terms of these licenses, in addition to the NCAcelerate
+source code license, in order to use this software.
+
+--------------------------------------------------
+Third party R packages listed by License type
+[Format: Name - URL]
+--------------------------------------------------
+
+MIT / X11 License (or adaptations) (https://www.opensource.org/licenses/MIT)
+  * bslib - https://github.com/rstudio/bslib/blob/main/LICENSE
+  * cellranger - https://github.com/rsheets/cellranger/blob/master/LICENSE
+  * dplyr - https://github.com/tidyverse/dplyr/blob/main/LICENSE.md
+  * ggplot2 - https://github.com/tidyverse/ggplot2/blob/main/LICENSE.md
+  * kableExtra - https://github.com/haozhu233/kableExtra/blob/master/LICENSE
+  * readxl - https://github.com/tidyverse/readxl/blob/main/LICENSE
+  * scales - https://github.com/r-lib/scales/blob/main/LICENSE
+  * shiny.fluent - https://github.com/Appsilon/shiny.fluent/blob/main/LICENSE
+  * tidyverse - https://github.com/tidyverse/tidyverse/blob/main/LICENSE.md
+
+GPL-3 / GPL-2
+  * DT - https://cran.r-project.org/web/licenses/GPL-3
+  * ggprism - https://cran.r-project.org/web/licenses/GPL-3
+  * rmarkdown - https://cran.r-project.org/web/licenses/GPL-3
+  * shiny - https://cran.r-project.org/web/licenses/GPL-3
+  * shinyBS - https://cran.r-project.org/web/licenses/GPL-3
+  * shinydashboard - https://cran.r-project.org/web/licenses/GPL-3
+  * table1 - https://cran.r-project.org/web/licenses/GPL-3
+  * knitr - https://github.com/yihui/knitr/blob/master/LICENSE (GPL-2)

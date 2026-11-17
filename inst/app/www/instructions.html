@@ -1,0 +1,57 @@
+<h6 style="font-weight: bold;">Introduction</h6>
+<ul class="instructions">
+  <li>This app is designed for automating below items of FIH (first in human) SAD (single ascending dose) and MAD (multiple ascending dose) analysis:</li>
+  <ul>
+    <li>Time-concentration plot</li>
+    <li>PK parameter summary table</li>
+    <li>Dose proportionality projection</li>
+  </ul>
+</ul>
+
+<h6 style="font-weight: bold;">Data</h6>
+<ul class="instructions" style="margin-bottom: 6px;">
+  <li>Designed for Ardena and Watson-styled data.</li>
+  <li>Please use the output time-concentration and PK parameter data (stacked) from the <strong>Phoenix NCA workflow</strong>.
+    Names of the steps in the workflow:</li>
+  <ul>
+    <li>Step 1a: Prep Sample Data_EXPORT for RShiny CvT Plot</li>
+    <ul>
+      <li>If the output file is an excel file, please make sure the data has only one tab</li>
+    </ul>
+    <li>Step 4a/c: EXPORT Results for RShiny PK Parameter Table</li>
+  </ul>
+  <li>Acceptable data formats are .csv, .xlsx, .xls.</li>
+  <li>MAD time concentration data: for the purpose of the app, if period is not populated, it will be populated with 1.</li>
+  <li>Variables needed in input time-concentration data:</li>
+</ul>
+
+<table class="instructions-table">
+  <tr>
+    <th>Variable Name*</th>
+    <th>Variable Explanation</th>
+    <th>Needed in Watson Data</th>
+    <th>Needed in Ardena Data</th>
+  </tr>
+  <tr><td>PKEXTNAM</td><td class="center-text">column value: &ldquo;ARDENA&rdquo;</td><td class="center-text"></td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTSUBJID</td><td class="center-text">subject ID</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTORRES</td><td class="center-text">concentration value</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTNMHR</td><td class="center-text">nominal hour</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTDOSE**</td><td class="center-text">dose value and unit</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTSTUDYID</td><td class="center-text">study ID</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTSRCANL</td><td class="center-text">analyte</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTSPECAB</td><td class="center-text">matrix</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTPKSEQ</td><td class="center-text">panel</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTPERIOD</td><td class="center-text">period</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+  <tr><td>PKEXTSTDYDY</td><td class="center-text">day</td><td class="center-text">&#10003;</td><td class="center-text">&#10003;</td></tr>
+</table>
+
+<ul class="no-bullets">
+  <li>* Column names of the input data should be the same as Variable Name (e.g., Column name &ldquo;Period&rdquo; won&rsquo;t work, it has to be &ldquo;PKEXTPERIOD&rdquo;).</li>
+  <li>** Ardena data format should be value followed by unit (e.g., 50 mg), no second row in column header. Watson data format should be value only (e.g., 50), with unit (e.g., mg) in the second row of column header.</li>
+</ul>
+
+<h6 style="font-weight: bold;">Layout</h6>
+<ul class="instructions">
+  <li>The "Data Check", "Mean Concentration Data", "Time-Concentration Plot" tabs are used for time-concentration data.</li>
+  <li>The "PK Parameter Table" and "Dose Proportionality" tabs are used for PK parameter data (stacked).</li>
+</ul>
