@@ -3,7 +3,7 @@ Type: Package
 Title: Automated Reporting of Non-Compartmental PK Analysis for FIH Studies
 Version: 1.0.0
 Authors@R: 
-    person("Ruilian (Roxy)", "Zhang", email = "maintainer@example.com",
+    person("Ruilian (Roxy)", "Zhang", email = "ruilian.zhang@merck.com",
            role = c("aut", "cre"))
 Description: A 'shiny' application and supporting functions that automate the
     reporting of first-in-human (FIH) single ascending dose (SAD) and multiple
