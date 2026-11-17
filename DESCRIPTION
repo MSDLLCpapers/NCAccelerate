@@ -1,0 +1,40 @@
+Package: NCAcelerate
+Type: Package
+Title: Automated Reporting of Non-Compartmental PK Analysis for FIH Studies
+Version: 1.0.0
+Authors@R: 
+    person("Ruilian (Roxy)", "Zhang", email = "maintainer@example.com",
+           role = c("aut", "cre"))
+Description: A 'shiny' application and supporting functions that automate the
+    reporting of first-in-human (FIH) single ascending dose (SAD) and multiple
+    ascending dose (MAD) pharmacokinetic analyses produced by a Phoenix NCA
+    workflow. Provides time-concentration plots, summary PK parameter tables
+    (geometric mean and CV%, accumulation ratio) and power-model dose
+    proportionality assessment with parameter projections.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends:
+    R (>= 4.1.0)
+Imports:
+    bslib,
+    dplyr (>= 1.1.0),
+    DT,
+    ggplot2 (>= 3.4.0),
+    knitr,
+    readxl,
+    rlang,
+    rmarkdown,
+    scales,
+    shiny (>= 1.7.0),
+    stats,
+    table1,
+    tidyr,
+    tools,
+    utils
+Suggests:
+    openxlsx,
+    pkgload,
+    testthat (>= 3.0.0),
+    withr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
